@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+# cmake
+*.cmake
+CMakeCache.txt
+CMakeFiles
+MakeFile
+DartConfiguration.tcl
+
+# Build files
+build
+Craytracer20
+build.ninja
+ninja.*
+
+# IDE files
+.vscode
