@@ -1,0 +1,40 @@
+/**
+ * @file pv.mpp
+ * @brief Wrapper partition module for points and vectors
+ *
+ */
+
+module;
+
+#include <opencv2/core/matx.hpp>
+
+export module primitives:PV;
+
+export namespace primitives {
+    using Point = cv::Vec4d;
+    using Vector = cv::Vec4d;
+
+    /**
+     * @brief Create a point in an OpenCV Vector class
+     *
+     * @param x
+     * @param y
+     * @param z
+     * @return Point Object with x, y, z and a w value of 1
+     */
+    Point makePoint(double x, double y, double z) {
+        return cv::Vec4d(x, y, z, 1.0);
+    }
+
+    /**
+     * @brief Create a vector in an OpenCV Vector class
+     *
+     * @param x
+     * @param y
+     * @param z
+     * @return Vector Object with x, y, z and a w value of 0
+     */
+    Vector makeVector(double x, double y, double z) {
+        return cv::Vec4d(x, y, z, 0.0);
+    }
+}

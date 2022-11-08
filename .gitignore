@@ -42,7 +42,7 @@ DartConfiguration.tcl
 build
 Craytracer20
 build.ninja
-ninja.*
+.ninja*
 
 # IDE files
 .vscode

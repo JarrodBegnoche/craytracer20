@@ -1,10 +1,12 @@
-# craytracer20
+# Craytracer20
 
 Raytracer written in C++20, based on the book [The Ray Tracer Challenge by Jamis Buck](https://pragprog.com/book/jbtracer/the-ray-tracer-challenge).
 
-Currently needs a patched version of gcc and cmake built from the master branch.
+Designed to use C++20 modules with CMake for compatibility across multiple systems.  Currently needs a patched version of
+gcc and cmake built from the master branch.  Requires using ninja as the generator for cmake.
 
 [P1689R5 gcc patch by mathstuf](https://github.com/mathstuf/gcc/tree/p1689r5)
+
 [Kitware CMake](https://github.com/Kitware/CMake)
 
 ## Libraries/Tools

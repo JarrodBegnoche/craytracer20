@@ -1,0 +1,41 @@
+/**
+ * @file ray.mpp
+ * @brief Wrapper partition module for rays
+ *
+ */
+
+module;
+
+#include <opencv2/core/matx.hpp>
+
+export module primitives:Ray;
+import :PV;
+
+export namespace primitives {
+    class Ray {
+        public:
+            /**
+             * @brief Construct a new Ray object
+             *
+             * @param origin Starting point
+             * @param direction Direction from origin
+             */
+            Ray(Point origin, Vector direction) : _origin(origin), _direction(direction) {}
+
+            /**
+             * @brief Calculate the position after an amount of time
+             *
+             * @param time Amount to calculate movement from origin
+             * @return Point Travel point after allotted time
+             */
+            Point position(double time) {
+                Point pos = _origin + (_direction * time);
+                pos[3] = 1.0;
+                return pos;
+            }
+
+        private:
+            Point _origin;
+            Vector _direction;
+    };
+}

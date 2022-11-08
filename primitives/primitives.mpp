@@ -1,0 +1,9 @@
+/**
+ * @file primitives.mpp
+ * @brief Main primitives module, collects the partitions into a single module for importing
+ *
+ */
+export module primitives;
+
+export import :PV;
+export import :Ray;
