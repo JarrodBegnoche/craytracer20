@@ -4,7 +4,6 @@ project(Craytracer20
         VERSION 0.02
         LANGUAGES CXX)
 
-
 set(CMAKE_EXPERIMENTAL_CXX_MODULE_CMAKE_API "3c375311-a3c9-4396-a187-3227ef642046")
 if(WIN32)
   include(msvc_modules.cmake)

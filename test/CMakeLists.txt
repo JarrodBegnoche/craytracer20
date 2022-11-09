@@ -18,7 +18,7 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 FetchContent_MakeAvailable(googletest)
 
-add_executable(UnitTests primitives_test.cpp)
+add_executable(UnitTests pv_test.cpp)
 
 target_link_libraries(
   UnitTests
