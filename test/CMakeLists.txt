@@ -22,6 +22,7 @@ add_executable(UnitTests primitives_test.cpp)
 
 target_link_libraries(
   UnitTests
+  ${OpenCV_LIBS}
   primitives
   gtest
   gtest_main
